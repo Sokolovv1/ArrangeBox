@@ -1,0 +1,110 @@
+body, h2 {
+  padding: 0px;
+  margin: 0px;
+}
+
+.wrapper {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.ArrangeBox {
+  margin: 10px;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.AvailableWrapper {
+  display: flex;
+}
+
+.searchblock {
+  max-height: 70px;
+  margin: 10px;
+}
+
+.searchblock input {
+  min-height: 35px;
+  border-radius: 5px;
+  border: 2px solid orange;
+}
+
+.button-list-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-left{
+  padding: 15px;
+  margin: 10px;
+  color: #fff;
+  background: orange;
+  border: 0;
+  border-radius: 3px;
+}
+.button-list-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-right {
+  padding: 15px;
+  margin: 10px;
+  color: #fff;
+  background: orange;
+  border: 0;
+  border-radius: 3px;
+}
+
+.button-list-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 70px;
+}
+
+.container {
+  overflow-y: scroll;
+  min-height: 350px;
+  max-height: 400px;
+  min-width: 400px;
+  border: 5px solid black;
+  border-radius: 5px;
+}
+
+.ArrangeBox-item {
+  height: 25px;
+  border-bottom: 3px solid black;
+  text-align: center;
+  color: black;
+  cursor: grab;
+}
+
+.button-center {
+  padding: 10px;
+  margin: 3px;
+  color: #fff;
+  background: orange;
+  border: 0;
+  border-radius: 3px;
+}
+
+.active {
+  background: orange;
+}
+
+h3 {
+  width: 100%;
+  height: 25px;
+  border: 0px solid black;
+  overflow: auto;
+}
+
+.SelectedWrapper {
+  display: flex;
+}
