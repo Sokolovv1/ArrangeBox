@@ -32,9 +32,10 @@ class ArrangeBox {
         AvailableTittle.textContent = "Available";
         Available.append(AvailableTittle);
 
-        // Создаем поисковую форму для левог контейнера
+        // Создаем поисковую форму для левого контейнера
         const SearchBlockAvailable = document.createElement("form");
         SearchBlockAvailable.setAttribute("class", "SearchBlockAvailable searchblock");
+        SearchBlockAvailable.setAttribute("onkeypress", "if(event.keyCode == 13) return false;");
         Available.append(SearchBlockAvailable);
 
         const SearchAvailable = document.createElement("input");
@@ -163,6 +164,7 @@ class ArrangeBox {
         // Создает поисковую форму для правого контейнера
         const SearchBlockSelected = document.createElement("form");
         SearchBlockSelected.setAttribute("class", "SearchBlockSelected searchblock");
+        SearchBlockSelected.setAttribute("onkeypress", "if(event.keyCode == 13) return false;");
         Selected.append(SearchBlockSelected);
 
         const SearchSelected = document.createElement("input");
@@ -481,5 +483,3 @@ class ArrangeBox {
 
 let object = new ArrangeBox();
 object.myConstructor("wrapper");
-
-
